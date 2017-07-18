@@ -1,0 +1,9 @@
+<jigsaw-button width="150" (click)="dataChange()">
+    change tableData
+</jigsaw-button>
+
+<jigsaw-button width="150" (click)="columnsChange()">
+    change columns
+</jigsaw-button>
+
+<jigsaw-table [data]="tableData" [columnDefines]="columns"></jigsaw-table>

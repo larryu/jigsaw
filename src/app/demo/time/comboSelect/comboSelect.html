@@ -1,0 +1,18 @@
+<jigsaw-combo-select [(value)]="singleTimeComboValue" width="100px">
+    <jigsaw-time
+        [(date)]="date"
+        (dateChange)="handleDateChange($event)">
+    </jigsaw-time>
+</jigsaw-combo-select>
+Selected Time : {{date}}<br><br>
+
+
+<jigsaw-combo-select [(value)]="rangeTimeComboValue">
+    <jigsaw-range-time
+        [(beginDate)]="beginDate"
+        [(endDate)]="endDate"
+        (beginDateChange)="handleDeginDateChange($event)"
+        (endDateChange)="handleEndDateChange($event)">
+    </jigsaw-range-time>
+</jigsaw-combo-select>
+Selected Time : {{beginDate}} - {{endDate}}

@@ -1,0 +1,20 @@
+<div class="combo-select-demo cmn-box">
+    <h3>basic demo</h3>
+    <div class="test-btn">
+        <jigsaw-button (click)="changeTrigger()">change trigger</jigsaw-button>
+    </div>
+    <jigsaw-combo-select
+        [openTrigger]="openTrigger"
+        [closeTrigger]="closeTrigger"
+        [(value)]="selectedCity">
+        <jigsaw-tile-select
+            [(selectedItems)]="selectedCity"
+            labelField="label"
+            [searchable]="true"
+            [data]="citys"
+            width="400px"
+            tileOptionWidth="100px">
+        </jigsaw-tile-select>
+    </jigsaw-combo-select>
+</div>
+

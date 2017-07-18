@@ -1,0 +1,12 @@
+<jigsaw-combo-select
+    placeholder="请输入姓名~"
+    autoWidth="true"
+    [(value)]="selectedCity">
+    <jigsaw-tile-select
+        [(selectedItems)]="selectedCity"
+        labelField="label"
+        [searchable]="true"
+        [data]="citys"
+        tileOptionWidth="100px">
+    </jigsaw-tile-select>
+</jigsaw-combo-select>
